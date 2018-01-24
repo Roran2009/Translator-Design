@@ -37,10 +37,11 @@ extern int line;
 extern int col;
 
 void yyerror(const char* m);
-%}
+
 %union {
   string* token;
 }
+%}
 %token <token> PLUS
 %token <token> MINUS
 %token <token> STAR
